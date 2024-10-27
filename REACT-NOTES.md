@@ -79,6 +79,14 @@ justifyContent: "space-around"
 flexDirection: "row", // Sets main axis
 justifyContent: "center", // Justifies on main axis
 alignItems: "center" // Justifies in secondary axis
+alignContent: "center", // No efect if there is no wrapping
+flexWrap: "wrap"
+
+flexBasis: 100, // Sets to width of height depending on which is the main axis, row or column
+flexGrow: 1 // Same as flex
+flexShrink: 1, // If there is overflowing, reduce this item until they fit. Same as flex: -1
 ```
 
 These propierties on the container can be overwritten in the child with `alignSelf`
+
+# Positioning

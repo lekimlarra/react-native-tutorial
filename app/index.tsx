@@ -33,18 +33,24 @@ export default function Index() {
         flex: 1,
         flexDirection: "row", // Sets main axis
         justifyContent: "center", // Justifies on main axis
-        alignItems: "center" // Justifies in secondary axis
+        alignItems: "center", // Justifies in secondary axis
+        alignContent: "center", // No efect if there is no wrapping
+        //flexWrap: "wrap"
       }}>
         <View style={{
           backgroundColor: "dodgerblue",
           width: 100,
-          height: 300,
-          alignSelf: "flex-start"
+          height: 100,
+
+          //alignSelf: "flex-start"
         }}></View>
         <View style={{
           backgroundColor: "gold",
           width: 100,
-          height: 200
+          height: 100,
+          top: 20,
+          left: 20,
+          position: "absolute"
         }}></View>
         <View style={{
           backgroundColor: "tomato",
