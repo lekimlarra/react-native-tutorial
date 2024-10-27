@@ -7,8 +7,8 @@ import ViewImageScreen from "./screens/ViewImageScreen";
 export default function Index() {
   
   return (
-    //<WelcomeScreen/>
-    <ViewImageScreen/>
+    <WelcomeScreen/>
+    //<ViewImageScreen/>
   );
 }
 
