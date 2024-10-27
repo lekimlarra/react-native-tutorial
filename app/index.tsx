@@ -30,19 +30,26 @@ export default function Index() {
   return (
       <View style={{
         backgroundColor: "#fff",
-        flex: 1
+        flex: 1,
+        flexDirection: "row", // Sets main axis
+        justifyContent: "center", // Justifies on main axis
+        alignItems: "center" // Justifies in secondary axis
       }}>
         <View style={{
-          backgroundColor: "gold",
-          flex: 2
+          backgroundColor: "dodgerblue",
+          width: 100,
+          height: 300,
+          alignSelf: "flex-start"
         }}></View>
         <View style={{
-          backgroundColor: "dodgerblue",
-          flex: 1
+          backgroundColor: "gold",
+          width: 100,
+          height: 200
         }}></View>
         <View style={{
           backgroundColor: "tomato",
-          flex: 1
+          width: 100,
+          height: 100
         }}></View>
       </View>
   );
