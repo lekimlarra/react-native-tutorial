@@ -89,4 +89,7 @@ flexShrink: 1, // If there is overflowing, reduce this item until they fit. Same
 
 These propierties on the container can be overwritten in the child with `alignSelf`
 
-# Positioning
+# Shortcuts
+
+For a new TSX file --> `rsf`
+For the style sheets --> `rnss`
