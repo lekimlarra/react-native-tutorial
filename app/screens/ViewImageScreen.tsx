@@ -1,5 +1,6 @@
 import { Dimensions, StyleSheet, ImageBackground, View, Image, Text } from "react-native";
 
+import colors from "../config/colors"
 
 function ViewImageScreen() {
     const screenH = Dimensions.get("screen").height;
@@ -23,19 +24,19 @@ const styles = StyleSheet.create({
     closeIcon: {
         width: 50,
         height: 50,
-        backgroundColor: "#fc5c65",
+        backgroundColor: colors.primary,
         position: "absolute",
         top: 40,
         left: 30
     },
     container: {
-        backgroundColor: "black",
+        backgroundColor: colors.black,
         flex: 1
     },
     deleteIcon:{
         width: 50,
         height: 50,
-        backgroundColor: "#4ecdc4",
+        backgroundColor: colors.secondary,
         position: "absolute",
         top: 40,
         right: 30
