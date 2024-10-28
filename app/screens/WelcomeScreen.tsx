@@ -1,5 +1,6 @@
 import { Dimensions, StyleSheet, ImageBackground, View, Image, Text, TouchableHighlight } from "react-native";
 
+import { Link } from 'expo-router';
 import colors from "../config/colors"
 
 function WelcomeScreen() {
@@ -26,10 +27,9 @@ function WelcomeScreen() {
                 <Text>Sell what you don't need</Text>
             </View>
             <TouchableHighlight onPress={goToDetail} style={styles.loginButton}>
-                <View>
-                    <Text>Hola</Text>
-                </View>
+            <Link href="/screens/ViewImageScreen">Imae screen</Link>
             </TouchableHighlight>
+            
             <View style={styles.registerButton}></View>
         </ImageBackground>
     );
